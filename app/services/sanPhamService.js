@@ -1,9 +1,8 @@
-const baseURL = 'https://5d6ec5ac777f670014036bb9.mockapi.io/sanpham';
-
 class SanPhamService {
+  #baseURL = 'https://5d6ec5ac777f670014036bb9.mockapi.io/sanpham';
   constructor() {
     this.sanPhamAPI = axios.create({
-      baseURL: baseURL,
+      baseURL: this.#baseURL,
       timeout: 3000,
       headers: {
         'Content-Type': 'application/json',

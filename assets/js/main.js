@@ -3,6 +3,7 @@ const sanPhamMD = new SanPhamModel();
 const sanPhamController = new SanPhamController();
 
 sanPhamController.hienThiSanPham();
+
 document.getElementById('themSP').addEventListener('click', () => {
   sanPhamController.themSanPham();
 });
